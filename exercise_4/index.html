@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #4</title>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background:green;
+    position: relative;
+    animation: mymove 50s infinite;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+	5%   {top: 500px;}
+    10%  {top: 200px;background:green; width: 100px;}
+    20%  {top: 400px;left: 0px;background:yellow; width: 400px;}
+    30%  {top: 400px;left: 100px;background:red; width: 100px;}
+	35%  {top: 200px;left: 200px;background:red; width: 100px;height:100px;transform:rotate(0deg);}
+	40%  {top: 200px;left: 200px;background:red; width: 300px;height:300px;transform:rotate(360deg);}
+	50%  {top: 200px;left: 600px;background:blue; width: 150px;height:150px;transform:skewx(0deg);}
+	70%  {top: 200px;left: 600px;bottom:0px;right:0px;background:purple; width: 150px;height:150px;transform:skewX(360deg);}
+	90%  {top: 500px;left: 1200px;background:purple; width: 50px;height:50px;transform:rotate(0deg)}
+	100%  {top: 0px;transform:rotate(5240deg);}
+	}
+</style>
+</head>
+<div></div>
+</html>
+
