@@ -7,17 +7,15 @@ $(document). ready(function(){
 	
 	$("#date").text(date);
 	
-	function screensaver(){
-		var url = "url(" + bgImages[ticker] + ")"
-		$("#screensaver").css("background-image",url);
-		
-		var tickerText = ticker + 1;
-		$("#ticker").text(tickerText);
-		ticker+=1;
-		if (ticker == count){
-			ticker = 0;
-		}
-	}
+	 function screensaver() {
+        var url = "url(" + bgImages[ticker] + ")"
+        $("#screensaver").css("background-image", url);
+        $("#ticker").text(ticker + 1)
+        ticker += 1;
+        if (ticker > count - 1) {
+            ticker = 0;
+        }
+    };
 	//screensaver();
 	$(document).click(function(){
 	

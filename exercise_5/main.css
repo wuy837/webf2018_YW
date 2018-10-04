@@ -2,8 +2,7 @@ body {
 	margin: 0px;
 	height: 100%;
 	overflow: hidden;
-	background-image: linear-gradient(to top, grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black,grey,black);
-	color:white;
+	background-color: dimgrey;
 }
 #container {
 	margin: 0;
