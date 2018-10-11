@@ -9,39 +9,53 @@
 			}
 			img{
 				display: block;
-				border: 10px dotted lightblue;
+				border: 10px inset lightblue;
 				margin-left: auto;
 				margin-right: auto;
-				height:50%;
-				width:50%;
+				height:80%;
+				width:80%;
+				transition: .1s;
 			}
-			#container{
-				text-align:left;
-				font-size: 30px;
+			.detail img:hover {
+			  filter: blur(50px);
 			}
+
 			h1{
-				text-align:right;
+				text-align:center;
 				font-size: 100px;
 			}
+			  
 			p{
 				text-align:left;
 				font-size: 15px;
-				width:50%;
+				padding: 50px;
+	            font-family: fantasy;
 			}
-	
+		#footer{
+			text-align: center;
+              height: 50px;
+              clear: both;
+       
+          }
+          #footer a{
+              padding: 20px;
+              border-radius: 50px;
+              border:1px dotted black;
+              border-radius: 100px;
+              transition: 0.1s ease;
+          }
+          #footer a:hover{
+              box-shadow: 10px 10px 15px black;
+          }
 		</style>
     </head>
     <body>
-    <img src="cinematicspace.jpg">
-   
-        <h1>Sky Temple</h1>
-		<div id="container">
-			 <ol>Artist<i>&lt;Yue Wu&gt;</i></ol>
-			 <ol>Date<i>&lt;2016&gt;</i></ol>
-			 <ol>Medium<i>&lt;Photoshop&gt;</i></ol>
-			</div>
-			<p>I get the idea from a movie called Laputa: Castle in the Sky by Hayao Miyazaki. I want to create Chinese towers floating above the mountains in the sky. I choose Yuejiang Tower in Nanjing where I grow up, Beijing's Forbidden City and Mount Huangshan in Anhui where I born as my references. At the beginning, my sketch was one-point perspective. It was hard to tell the towers are floating in the sky. I changed it to two-point perspective and one tower is further away. However, the horizontal line is not very clear. I should improve it. I draw the towers and mountains in black and white first because I want to make sure the structure is correct. Then, I add a new layer to put the colors on. I choose red, green and yellow for towers because they are the three main colors of old Chinese buildings. I keep the background in white and light blue in order to create contrast with towers and mountains and help the towers pop out. I should mix more dark neutral shades. I do not have varieties of color on my work.</p>
-			 <div style="text-align:right;"><button><a href="http://portfolio.newschool.edu/wuy837/2016/10/17/cinematic-space/">more info</a></button>
-          </div>
+    <h1>Sky Temple</h1>
+		<img src="cinematicspace.jpg">
+ 
+			<p>I get the idea from a movie called Laputa: Castle in the Sky by Hayao Miyazaki. I want to create Chinese towers floating above the mountains in the sky. I choose Yuejiang Tower in Nanjing where I grow up, Beijing's Forbidden City and Mount Huangshan in Anhui where I born as my references. At the beginning, my sketch was one-point perspective. It was hard to tell the towers are floating in the sky. I changed it to two-point perspective and one tower is further away. However, the horizontal line is not very clear. I should improve it. I draw the towers and mountains in black and white first because I want to make sure the structure is correct. Then, I add a new layer to put the colors on. I choose red, green and yellow for towers because they are the three main colors of old Chinese buildings. I keep the background in white and light blue in order to create contrast with towers and mountains and help the towers pop out. I should mix more dark neutral shades. I do not have varieties of color on my work.</p> 
+		<div id="footer">
+            <a href="http://portfolio.newschool.edu/wuy837/2016/10/17/cinematic-space/" target="_blank" class="detailText">MORE INFO</a>
+         </div>
     </body>
 </html>
