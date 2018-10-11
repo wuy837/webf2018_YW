@@ -10,9 +10,9 @@ $(document). ready(function(){
 	 function screensaver() {
         var url = "url(" + bgImages[ticker] + ")"
         $("#screensaver").css("background-image", url);
-        $("#ticker").text(ticker + 1)
+        $("#ticker").text(ticker+1)
         ticker += 1;
-        if (ticker > count - 1) {
+        if (ticker == count) {
             ticker = 0;
         }
     };
@@ -33,7 +33,7 @@ $(document). ready(function(){
 	})
 	setInterval(function(){
 		time+=1;
-		if(time>2){
+		if(time>4){
 			$("#screensaver").css("opacity",1)
 		$("#ticker").css("opacity",1)
 		
