@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<meta charset="utf-8">
+<title>Scan Generator</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="scripts.js"></script>
+    <style>
+		body{
+			margin: 0;
+			background-color: white;
+			height: 100%;
+			overflow: hidden;
+		}
+		#left{
+			background-color: #f1f1f1;
+			width: 20%;
+			height: 100vh;
+			padding: 2vw;
+			float: left;
+			font-size: 11px;
+			font-family: sans-serif;
+		}
+		#right{
+			float: left;
+			width: 75vw;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 100vh;
+		}
+		#text {
+			font-size: 30px;
+			max-width: 30vw;
+		}
+		#poster{
+			display: inline-block;
+			text-align: left;
+			line-height: 35px;
+			vertical-align: middle;
+		}
+		img{
+			max-height: 80vh;
+			max-width: 30vw;
+			min-width: 300px;
+			filter: grayscale(100%),contrast(15%), brightness(.4);	
+		}
+		#date{
+			font-size: 11px;
+		}
+    </style>
+</head>
+<body>
+    <div id="container">
+		<div id="left">
+		<b>Scan Generation</b>
+		<form>
+			<div><textarea class="default-value" id="textarea"></textarea>
+				<br><input id="submit" type="button" value="Generate text" onclick="append()" />
+			</div>
+			</form>
+			<input id="file" type="file" onchange="previewFile()">
+		</div>
+		<div id="right">
+			<div id="poster">
+				<div id="text">(Placeholder Text)</div>
+				<img src="images-2.png">
+				<div id="date"></div>	
+			</div>
+		</div>
+    </div>
+    </body>
+</html>
