@@ -1,0 +1,169 @@
+
+.shapes {
+  position: relative;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+}
+.shape:nth-child(1) {
+  top: 67%;
+  left: 21%;
+  height: 14vmin;
+  width: 14vmin;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: move-from-lower-left;
+          animation-name: move-from-lower-left;
+}
+.shape:nth-child(2) {
+  top: 8%;
+  left: 42%;
+  height: 8.7vmin;
+  width: 8.7vmin;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: move-from-upper-left;
+          animation-name: move-from-upper-left;
+}
+.shape:nth-child(3) {
+  top: 65%;
+  left: 3%;
+  height: 13.2vmin;
+  width: 13.2vmin;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: move-from-lower-right;
+          animation-name: move-from-lower-right;
+}
+.shape:nth-child(4) {
+  top: 44%;
+  left: 29%;
+  height: 4.9vmin;
+  width: 4.9vmin;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: move-from-upper-right;
+          animation-name: move-from-upper-right;
+}
+.shape:nth-child(5) {
+  top: 69%;
+  left: 22%;
+  height: 8.1vmin;
+  width: 8.1vmin;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: move-from-lower-left;
+          animation-name: move-from-lower-left;
+}
+
+@-webkit-keyframes move-from-upper-left {
+  100% {
+    -webkit-transform: translate(100vw, 100vh) translateZ(0);
+            transform: translate(100vw, 100vh) translateZ(0);
+  }
+}
+
+@keyframes move-from-upper-left {
+  100% {
+    -webkit-transform: translate(100vw, 100vh) translateZ(0);
+            transform: translate(100vw, 100vh) translateZ(0);
+  }
+}
+@-webkit-keyframes move-from-upper-right {
+  100% {
+    -webkit-transform: translate(-100vw, 100vh)translateZ(0);
+            transform: translate(-100vw, 100vh)translateZ(0);
+  }
+}
+@keyframes move-from-upper-right {
+  100% {
+    -webkit-transform: translate(-100vw, 100vh)translateZ(0);
+            transform: translate(-100vw, 100vh)translateZ(0);
+  }
+}
+@-webkit-keyframes move-from-lower-left {
+  100% {
+    -webkit-transform: translate(100vw, -100vh)translateZ(0);
+            transform: translate(100vw, -100vh)translateZ(0);
+  }
+}
+@keyframes move-from-lower-left {
+  100% {
+    -webkit-transform: translate(100vw, -100vh)translateZ(0);
+            transform: translate(100vw, -100vh)translateZ(0);
+  }
+}
+@-webkit-keyframes move-from-lower-right {
+  100% {
+    -webkit-transform: translate(-100vw, -100vh) translateZ(0);
+            transform: translate(-100vw, -100vh) translateZ(0);
+  }
+}
+@keyframes move-from-lower-right {
+  100% {
+    -webkit-transform: translate(-100vw, -100vh) translateZ(0);
+            transform: translate(-100vw, -100vh) translateZ(0);
+  }
+}
+ #square {
+      width: 200px;
+      height: 200px;
+      background:indianred;
+    }
+    #circle {
+      width: 100px;
+      height: 100px;
+	background-color: yellowgreen;
+      border-radius: 50%
+    }
+   #parallelogram {
+      width: 150px;
+      height: 50px;
+      transform: skew(20deg);
+      background: darkblue;
+    }
+
+    #triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 100px solid orange;
+      border-bottom: 50px solid transparent;
+    }
+ #oval {
+      width: 50px;
+      height: 100px;
+      background: violet;
+      border-radius: 25px / 50px;
+    }
+body {
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
